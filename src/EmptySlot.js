@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import molehillImg from "./molehill.png"
 
 function EmptySlot(props) {
     useEffect(() => {
@@ -10,7 +11,7 @@ function EmptySlot(props) {
     })
     return (
         <div>
-            <h4>Empty Slot</h4>
+            <img src={molehillImg}></img>
         </div>
     )
 }
