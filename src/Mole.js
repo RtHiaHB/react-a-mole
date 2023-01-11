@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import moleImg from './mole.png'
 
 function Mole(props) {
     let { handleMoleBopping, setDisplayMole } = props
@@ -10,8 +11,8 @@ function Mole(props) {
         return () => clearTimeout(timer)
     })
     return (
-        <div onClick={handleMoleBopping}>
-            <h4>Mole</h4>
+        <div>
+            <img src={moleImg} onClick={handleMoleBopping} />
         </div>
     )
 }
